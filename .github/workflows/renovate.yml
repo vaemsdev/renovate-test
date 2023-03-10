@@ -2,9 +2,9 @@ name: Renovate
 on:
   [push]
   # schedule:
-    # The "*" (#42, asterisk) character has special semantics in YAML, so this
-    # string has to be quoted.
-    # - cron: '0/5 * * * *'
+  # The "*" (#42, asterisk) character has special semantics in YAML, so this
+  # string has to be quoted.
+  # - cron: '0/5 * * * *'
 jobs:
   renovate:
     runs-on: ubuntu-latest
@@ -14,4 +14,5 @@ jobs:
       - name: Renovate Github
         uses: renovatebot/github-action@v34.82.0
         with:
+          configurationFile: ./.github/config.js
           token: ${{ secrets.RENOVATE_TOKEN }}
