@@ -1,0 +1,41 @@
+{
+    "endpoint": "https://api.github.com/",
+    "token": "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",
+    "platform": "github",
+    "logLevel": "debug",
+    "onboardingConfig": {
+        "extends": [
+            "config:base",
+            ":dependencyDashboard"
+        ]
+    },
+    "repositories": [
+        "vaemsdev/renovate-test"
+    ],
+    "renovateFork": true,
+    "gitAuthor": "VAEMSDEV <vaemsdev@gmail.com>",
+    "username": "vaemsdev",
+    "onboarding": false,
+    "printConfig": true,
+    "requireConfig": false,
+    "recreateClosed": true,
+    "packageRules": [
+        {
+            "matchDepTypes": [
+                "dependencies"
+            ],
+            "matchUpdateTypes": [
+                "major",
+                "minor",
+                "patch",
+                "pin",
+                "digest",
+                "lockFileMaintenance",
+                "rollback",
+                "bump"
+            ],
+            "groupName": "dependencies",
+            "semanticCommitType": "fix"
+        }
+    ]
+}
