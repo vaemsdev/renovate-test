@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return 'Hello World'
+    return 'Hello World 1'
 
 @app.route('/predict_api', methods=["GET","POST"])
 def list_post():
