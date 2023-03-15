@@ -1,7 +1,7 @@
 {
   "name": "reno-ui",
   "version": "0.1.0",
-  "homepage": "https://renovate-dynamic.github.io/",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
